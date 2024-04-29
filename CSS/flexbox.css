@@ -1,0 +1,76 @@
+html {
+    font-family: 'Grape Nuts', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: rgb(36, 36, 36);
+    height: 75px;
+}
+
+h1 {
+    text-align: center;
+    color: #FFD700;
+    line-height: 75px;
+    margin: 0;
+}
+
+article {
+    padding: 1%;
+    margin: 1%;
+    background: rgb(255, 192, 203);
+    flex: 48%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    color: #333;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+div {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around; 
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    font-family: 'Arial', sans-serif; 
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #aa1b10;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+button:hover {
+    background-color: #ffda0b;
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tiempo By Alejandro</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="Fotos/Logo2.ico">
+</head>
+<body>
+
+  <form onsubmit="BuscarTemp(event)">
+    <label for="nombre">Nombre ciudad</label>
+      <input id="nombre" type="text">
+      <br>
+        <select id="idioma">
+            <option value="es">Español</option>
+            <option value="en">Ingles</option>
+            <option value="ca">Catalan</option>
+            <option value="ar">Arabe</option>
+        </select>
+      <button type="submit">Enviar</button>
+  </form>
+
+    <div id="temperatura">
+        
+    </div>
+
+    <script src="/JS/weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+body{
+  background-color: gray;
+}
+
+h1 {
+  color: mediumpurple
+}
+
+h2 {
+  color: greenyellow
+}
+
+h3 {
+  color: chocolate
+}
+
+h4 {
+  color: red
+}
+
+h5 {
+  color: orange
+}
+
+h6 {
+  color: lime
+}
+
+p {
+  color: aqua
+}
+
+pre {
+  color: blue
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Felicitación de Cumpleaños</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Maps&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+  <h1 class="animate__animated animate__rubberBand">¡Feliz Cumpleaños!</h1>
+
+  <div class="contenedor">
+    <div class="animate__animated animate__lightSpeedInLeft animate__delay-1s">
+      <div id="img-flo">
+        <img src="/Feliz/img/ramon.png" onclick="anima('flo', 'shakeX')">
+      </div>
+      <audio id="audio-flo" src="/Feliz/audio/claxon.mp3" onplay="anima('flo', 'shakeX')" ></audio>
+    </div>
+    <div class="animate__animated animate__backInDown animate__delay-2s">
+      <div id="img-sally">
+        <img src="/Feliz/img/rayo.png" onclick="anima('sally', 'swing')">
+      </div>
+      <audio id="audio-sally" src="/Feliz/audio/motor.mp3" onplay="anima('sally', 'swing')" ></audio>
+    </div>
+    <div class="animate__animated animate__lightSpeedInRight animate__delay-3s">
+      <div id="img-guido">
+        <img src="/Feliz/img/luigi.png" onclick="anima('guido', 'heartBeat')">
+      </div>
+      <audio id="audio-guido" src="/Feliz/audio/sonidocoche.mp3" onplay="anima('guido', 'heartBeat')" ></audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.lista-roja-sola {
+  color: red;
+  list-style-type: square;
+}
+
+.lista-azul-con-circulos {
+  color: blue;
+  list-style-type: circle;
+}
+
+.lista-verdes {
+  color: green;
+}
+
+.lista-amarilla {
+  color: yellow;
+}
+
+.lista-azul-griego {
+  color: blue;
+  list-style-type: lower-greek;
+}
+
+.lista-verde-disc {
+  color: green;
+  list-style-type: disc;
+}
+
+.lista-amarillo-circle {
+  color: yellow;
+  list-style-type: circle;
+}
+
+.lista-lila {
+  color: mediumpurple;
+}
+
+body{
+  background-color: gray;
+}

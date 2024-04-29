@@ -1,0 +1,108 @@
+.caja1 {
+    border: 5px solid red;
+    background-color: lightgray;
+    padding: 10px;
+    margin: 25px;
+    width: 250px;
+    height: 200px;
+  }
+
+  .caja2 {
+    border: 7px solid green;
+    background-color: gray;
+    padding: 5px;
+    margin: 0px;
+    width: 300px;
+    height: 200px;
+    color: white;
+    
+  }
+
+  .caja3 {
+    border: 7px solid rgb(230, 255, 6);
+    background-color: gray;
+    padding: 5px;
+    margin: 0px;
+    width: 300px;
+    height: 200px;
+    color: rgb(0, 0, 0);
+    
+  }
+
+
+
+
+  .contenedor {
+    border: 5px solid red; 
+  }
+  
+  .caja1 {
+    border: 5px solid green;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50%;
+  }
+  
+  .caja2 {
+    border: 5px solid blue;
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 50%;
+  }
+  
+  .caja3 {
+    border: 5px solid orange;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 50%;
+  }
+
+  .caja1 {
+    border: 5px solid red;
+    margin: 10px;
+    
+  }
+  
+  .caja2 {
+    border: 5px solid blue;
+    margin: 10px;
+    padding: 25px;
+    
+  }
+  
+  .caja3 {
+    border: 5px solid green;
+    margin: 10px;
+    padding: 50px;
+    
+  }
+
+  .caja1 {
+    border-top: 5px dotted green;
+    border-right: 5px dashed orange;
+    border-bottom: 5px dotted red;
+    border-left: 5px dashed blue;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+  }
+  
+  .caja2 {
+    border: 5px solid black;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-color: aqua;
+    border-bottom-color: pink;
+    padding: 15px;
+    text-align: center;
+    
+  }
+  
+  .caja3 {
+    border: 2px solid black;
+    padding: 10px;
+    
+  }
+  

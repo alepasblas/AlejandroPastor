@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hola mundo!">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Alejandro">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Saludos</title>
+  <link rel="stylesheet" href="styleFondo.css">
+</head>
+
+<body>
+  <h2>Ejercicio propuesto: Campos básicos</h2>
+  <form>
+    <p><label>
+        Nombre: <input type="text" name="nombre" required="">
+      </label></p>
+    <p><label>
+        Apellidos: <input type="text" name="apellidos" required="">
+      </label></p>
+
+    <p><label>
+        Contraseña: <input type="password" name="contrasena1" required="">
+      </label></p>
+    <p><label>
+        Repite la contraseña: <input type="password" name="contrasena2" required="">
+      </label></p>
+
+    <label>
+      <input type="checkbox" name="Informacion" value="1">
+      Quieres recibir informacion?
+      <br>
+    </label>
+    <label>
+      <input type="checkbox" name="Terminos" value="1" required="">
+      Aceptas los terminos?
+    </label>
+
+    <br>
+    <br>
+
+    <label>Cuéntanos que te gusta hacer: <br>
+      <textarea name="gustos" rows="5">En mi tiempo libre...
+      </textarea>
+    </label>
+
+    <br>
+    <br>
+
+
+
+    ¿Cuál es tu comida favorita?<br>
+    <label>
+      <input type="radio" name="comida" value="Arroz" checked="">Arroz
+    </label><br>
+    <label>
+      <input type="radio" name="comida" value="Pizza">Pizza
+    </label><br>
+    <label>
+      <input type="radio" name="comida" value="Kebab">Kebab
+    </label><br>
+    <label>
+      <input type="radio" name="comida" value="Hamburguesa">Hamburguesa
+    </label><br>
+
+    <br>
+    <br>
+
+    <label>Escoge la mascota que más te guste:
+      <select name="mascota" id="mascota">
+        <option value="">--Selecciona una opción--</option>
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="hamster">Hamster</option>
+        <option value="loro">Loro</option>
+        <option value="arana">Araña</option>
+        <option value="pez">Pez</option>
+      </select>
+    </label>
+
+    <br>
+    <br>
+
+    <input type="file" accept="image/*, capture/camera">
+    <br>
+    <input type="file" accept="video/*, capture/camcorder">
+    <br>
+    <input type="file" accept="audio/*, capture/microphone">
+
+    <br>
+    <br>
+
+    <p><button>Enviar</button></p>
+    <br>
+    <br>
+
+    <p>
+      <button type="reset">Reset</button>
+    </p>
+  </form>
+
+  <h2>Ejemplos de Elementos de Formulario HTML</h2>
+  <form>
+    <p><label>Correo electrónico:
+        <input type="email" name="email" required>
+      </label></p>
+    <p><label>URL:
+        <input type="url" name="url" required>
+      </label></p>
+    <p><label>Número de teléfono:
+        <input type="tel" name="phone" required>
+      </label></p>
+    <p><label>Campo numérico:
+        <input type="number" name="quantity" min="1" max="10" required>
+      </label></p>
+    <p><label>Control deslizante:
+        <input type="range" name="range" min="1" max="100">
+      </label></p>
+    <p><label>Fecha y hora:
+        <input type="datetime-local" name="meeting-time" required>
+      </label></p>
+    <p><label>Selector de color:
+        <input type="color" name="color" value="#ff0000">
+      </label></p>
+    <p><label>Campo de búsqueda:
+        <input type="search" name="search">
+      </label></p>
+    <p><button type="submit">Enviar</button></p>
+  </form>
+
+
+  <h2>Ejercicio propuesto: Guardar datos de contacto</h2>
+
+  <form action="https://contactar.alepasblas.repl.co/contactar.php">
+    <p><label>
+        Nombre<input type="text" name="nombre" required>
+      </label></p>
+    <p><label>
+        Correo<input type="email" name="correo" required>
+      </label></p>
+    <p><label>
+        Contacta con nosotros<textarea name="mensaje" required></textarea>
+      </label></p>
+
+    <p><button>Enviar</button></p>
+
+  </form>
+
+  <h2>Ejercicio propuesto: Formulario para saludar</h2>
+
+  <form action="https://contactar.alepasblas.repl.co/saludo.php" method="GET">
+    <p>
+      <label>
+        ¿Qué quieres decir para saludar?: <input name="saludo" value="Hola" required="">
+      </label>
+    </p>
+    <p>
+      <label>
+        ¿A quién se lo quieres decir?: <input name="persona" required="">
+      </label>
+    </p>
+    <p>
+      <button>Enviar el saludo</button>
+    </p>
+  </form>
+
+  <h2>Ejercicio propuesto: Formulario de login</h2>
+
+  <form action="https://contactar.alepasblas.repl.co/login.php" method="POST">
+    <p>
+      <label>Usuario: <input type="text" name="usuario" required=""></label>
+    </p>
+    <p>
+      <label>Contraseña: <input type="password" name="contrasena" required=""></label>
+    </p>
+    <p>
+      <button>Comprobar usuario y contraseña</button>
+    </p>
+  </form>
+</body>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Hola mundo!">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Alejandro">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Saludos</title>
+  <link rel="stylesheet" href="/CSS/styleFondo.css">
+  <link rel="icon" type="image/x-icon" href="Fotos/Logo2.ico">
+
+</head>
+<h2>Ejercicio propuesto: Bebida y hamburguesa</h2>
+
+<form>
+  <fieldset>
+    <legend>Tamaño de la bebida</legend>
+    <p>
+      <label><input type="radio" name="size" value="small">Pequeña</label>
+    </p>
+    <p>
+      <label><input type="radio" name="size" value="medium">Mediana</label>
+    </p>
+    <p>
+      <label><input type="radio" name="size" value="large">Grande</label>
+    </p>
+  </fieldset>
+</form>
+
+<form>
+  <fieldset>
+    <legend>Tamaño de la hamburguesa</legend>
+    <p>
+      <label><input type="radio" name="size" value="small">Pequeña</label>
+    </p>
+    <p>
+      <label><input type="radio" name="size" value="medium">Mediana</label>
+    </p>
+    <p>
+      <label><input type="radio" name="size" value="large">Grande</label>
+    </p>
+  </fieldset>
+</form>
+
+<h2> Ejercicio propuesto: Formulario de pago</h2>
+
+<form>
+  <h1>Formulario de Pago</h1>
+  <p>Los campos obligatorios se han marcado con <strong>*</strong>.</p>
+
+  <section>
+    <fieldset>
+      <legend>
+        <h2>Información de contacto</h2>
+      </legend>
+      <fieldset>
+        <legend>Tratamiento</legend>
+        <label><input type="radio" name="title" value="sr">Sr/Sra</label><br>
+        <label><input type="radio" name="title" value="dr">Dr/Dra</label><br>
+        <label><input type="radio" name="title" value="otro">Otro</label> <br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Profesion</legend>
+        <label><input type="radio" name="profesion" value="profe">Profesor</label><br>
+        <label><input type="radio" name="profesion" value="estu">Estudiante</label><br>
+        <label><input type="radio" name="profesion" value="otro">Otro</label><br>
+      </fieldset>
+
+      <p><label>Nombre: <input type="text" name="name" required> *</label></p>
+      <p><label>Correo electrónico: <input type="email" name="email" required> *</label></p>
+      <p><label>Numero de telefono: <input type="tel" name="tel" required> *</label></p>
+      <p><label>Contraseña: <input type="password" name="password" required> *</label></p>
+    </fieldset>
+  </section>
+
+  <section>
+    <fieldset>
+      <legend>
+        <h2>Información de pago</h2>
+      </legend>
+      <p><label>Tipo de tarjeta:
+          <select name="card_type">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amex">American Express</option>
+          </select>
+        </label></p>
+      <p><label>Número de tarjeta: <input type="tel" name="card_number" required> *
+        </label></p>
+      <p><label>Fecha de vencimiento: <input type="date" name="expiration" required> *
+        </label></p>
+      <p><label> Cuenta de paypal <input type="email" name="email" required> *
+        </label></p>
+    </fieldset>
+  </section>
+
+  <p><button type="submit">Validar el pago</button></p>
+</form>
+
+<h2>Ejercicio propuesto: Búsqueda de texto</h2>
+
+
+<img src="https://www.google.es/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" width="200"
+  alt="Imagen del logo de Google">
+<form action="https://google.com/search" method="GET">
+  <label>Google: <input type="text" name="q" required></label>
+  <button type="submit">Buscar</button>
+</form>
+
+<form action="https://duckduckgo.com/" method="GET">
+  <label>DuckDuckGo: <input type="text" name="q" required></label>
+  <button type="submit">Buscar</button>
+</form>
+
+<form action="https://bing.com/search" method="GET">
+  <label>Bing: <input type="text" name="q" required></label>
+  <button type="submit">Buscar</button>
+</form>
+
+<form action="https://yahoo.com/" method="GET">
+  <label>Yahoo: <input type="text" name="p" required></label>
+  <button type="submit">Buscar</button>
+</form>
+
+<h2>Buscar imagenes</h2>
+
+<form action="https://google.com/search" method="GET">
+  <label>Google: <input type="text" name="q" required></label>
+  <input type="hidden" name="tbm" value="isch">
+  <button type="submit">Buscar</button>
+</form>
+
+<form action="https://duckduckgo.com/" method="GET">
+  <label>DuckDuckGo: <input type="text" name="q" required></label>
+  <input type="hidden" name="iax" value="images">
+  <input type="hidden" name="ia" value="images">
+  <button type="submit">Buscar</button>
+</form>
+
+<form action="https://search.givewater.com/serp" method="GET">
+  <label>giveWater: <input type="text" name="q" required></label>
+  <input type="hidden" name="qc" value="images">
+  <button type="submit">Buscar</button>
+</form>
+
+<h2>Ejercicio propuesto: Texto o imágenes</h2>
+
+<form action="https://google.com/search">
+  <label>Google: <input type="text" name="q" required></label>
+  <label>Buscar imágenes <input type="checkbox" name="tbm" value="isch"></label>
+  <button>Buscar</button>
+</form>
+
+<form action="https://search.givewater.com/serp">
+  <label>Givewater: <input type="text" name="q" required></label>
+  <label>Buscar imágenes <input type="checkbox" name="qc" value="images"></label>
+  <button>Buscar</button>
+</form>
+
+<h2>Ejercicio propuesto: Filtrar imágenes con listas desplegables</h2>
+
+<fieldset>
+  <form action="https://google.com/search" method="GET">
+    <p>Buscar: <input type="text" name="q" class="big" required></p>
+
+    <fieldset>
+      <legend>Tamaño</legend>
+      <select name="tbs">
+        <option selected disabled>Cualquier tamaño</option>
+        <option value="isz:l">Grande</option>
+        <option value="isz:m">Mediano</option>
+        <option value="isz:i">Icono</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Color</legend>
+      <select name="tbs">
+        <option selected disabled>Cualquier color</option>
+        <option value="ic:color">Color</option>
+        <option value="ic:gray">Blanco y negro</option>
+        <option value="ic:trans">Transparente</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Tipo</legend>
+      <select name="tbs">
+        <option selected disabled>Cualquier tipo</option>
+        <option value="itp:clipart">Clip art</option>
+        <option value="itp:lineart">Dibujo lineal</option>
+        <option value="itp:animated">GIF</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Fecha</legend>
+      <select name="tbs">
+        <option selected disabled>Cualquier fecha</option>
+        <option value="qdr:d">Últimas 24 horas</option>
+        <option value="qdr:w">Última semana</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Licencia</legend>
+      <select name="tbs">
+        <option selected disabled>Cualquier licencia</option>
+        <option value="il:cl">Creative Commons</option>
+        <option value="il:ol">Comercial y otras</option>
+      </select>
+    </fieldset>
+
+    <input type="hidden" name="tbm" value="isch">
+
+    <button type="reset">Reiniciar</button>
+    <button type="submit">Buscar</button>
+  </form>
+</fieldset>
+
+<h2>Ejercicio propuesto: Filtrando imágenes con botones de radio</h2>
+
+<fieldset>
+  <form id="imageSearchForm" action="https://www.google.com/search" method="GET">
+    <p>Buscar: <input type="text" name="q" class="big" required></p>
+
+    <fieldset>
+      <legend>Tamaño</legend>
+      <label><input type="radio" name="tbs" value="isz:l"> Grande</label>
+      <label><input type="radio" name="tbs" value="isz:m"> Mediano</label>
+      <label><input type="radio" name="tbs" value="isz:i"> Icono</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Color</legend>
+      <label><input type="radio" name="tbs" value="ic:color"> Color</label>
+      <label><input type="radio" name="tbs" value="ic:gray"> Blanco y negro</label>
+      <label><input type="radio" name="tbs" value="ic:trans"> Transparente</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Tipo</legend>
+      <label><input type="radio" name="tbs" value="itp:clipart"> Clip art</label>
+      <label><input type="radio" name="tbs" value="itp:lineart"> Dibujo lineal</label>
+      <label><input type="radio" name="tbs" value="itp:animated"> GIF</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Fecha</legend>
+      <label><input type="radio" name="tbs" value="qdr:d"> Últimas 24 horas</label>
+      <label><input type="radio" name="tbs" value="qdr:w"> Última semana</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Licencia</legend>
+      <label><input type="radio" name="tbs" value="il:cl"> Creative Commons</label>
+      <label><input type="radio" name="tbs" value="il:ol"> Comercial y otras</label>
+    </fieldset>
+
+    <input type="hidden" name="tbm" value="isch">
+
+    <button type="reset">Reiniciar</button>
+    <button type="submit">Buscar</button>
+  </form>
+</fieldset>
+
+</body>
+
+</html>

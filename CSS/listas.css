@@ -1,0 +1,51 @@
+html {
+  font-family: 'Poppins', sans-serif; 
+  font-size: 10px;
+}
+
+h2 {
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgb(255, 0, 0); 
+  color: #3366ff; 
+}
+
+ul {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 2rem;
+  background-image: url("https://mdn.github.io/learning-area/css/styling-text/styling-lists/star.svg");
+  background-position: 0 0;
+  background-size: 1.3rem 1.3rem;
+  background-repeat: no-repeat;
+}
+
+ol {
+  list-style: lower-roman;
+}
+
+ul, ol, dl, p {
+  font-size: 1.8rem;
+  color: #663300; 
+}
+
+li, p {
+  line-height: 1.5;
+}
+
+dd, dt {
+  line-height: 1.5;
+}
+
+dt {
+  text-shadow: 0.5rem 0.5rem 0.5rem rgb(255, 0, 255); 
+  font-weight: bold;
+  text-decoration: underline overline;
+  text-decoration-thickness: 0.1rem;
+}
+
+dd {
+  margin: 0.5rem 0rem 1.5rem 2rem;
+}

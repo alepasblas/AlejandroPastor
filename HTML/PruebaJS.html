@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Prueba JavaScript">
+        <meta name="keywords" content="Prueba JavaScript">
+        <meta name="author" content="Alejandro">
+        <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+        <link rel="stylesheet" href="/CSS/Pruebajs.css">
+
+        <title>Lista Compra</title>
+    </head>
+    <body>
+        <form onsubmit="event.preventDefault(); return anadirProductos();">
+            <label>
+                Productos: <input type="text" name="producto" id="nombre" minlength="2" maxlength="10" required>
+            </label>
+            <br>
+            <label>
+                Cantidad de productos: <input type="number" name="cantidad" id="cantidad" max="10" min ="1" required>
+            </label>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <ul id="lista"></ul>
+
+        <button type ="button" onclick="borrarTodo()">Borrar Todo</button>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="/JS/prueba.js"></script>
+    </body>
+</html>

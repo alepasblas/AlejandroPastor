@@ -1,0 +1,67 @@
+h1 {
+  color: red
+}
+
+h2 {
+  color: navy
+}
+
+p {
+  color: green
+}
+
+a:link {
+  color: pink;
+}
+
+a:visited {
+  color: orange;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+.lista-roja-sola {
+  list-style-type: none;
+  color: red;
+}
+
+.lista-azul-con-circulos {
+  list-style-type: disc;
+  color: blue;
+}
+
+.lista-verdes-circulos {
+  list-style-type: circle;
+  color: green;
+}
+
+.lista-amarilla-cuadrados {
+  list-style-type: square;
+  color: yellow;
+}
+
+.lista-rojo-romano {
+  list-style-type: upper-roman;
+  color: red;
+}
+
+.lista-azul-griego {
+  list-style-type: lower-greek;
+  color: blue;
+}
+
+.lista-verde-alfa {
+  list-style-type: lower-alpha;
+  color: green;
+}
+
+.lista-amarillo-alfa-mayus {
+  list-style-type: upper-alpha;
+  color: yellow;
+}

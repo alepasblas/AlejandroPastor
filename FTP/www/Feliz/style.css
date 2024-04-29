@@ -1,0 +1,34 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+  font-family: "Rubik Glitch";
+  background-color: thistle;
+  text-align: center;
+  color: gray;
+  
+  font-size: 160%;
+  text-shadow: 2px 2px 2px black;
+}
+
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  .contenedor {
+    flex-direction: column;
+  }
+}
+
+img, audio {
+  width: 300px;
+  max-width: 100vw;
+  margin: 5px; 
+  filter: drop-shadow(5px 5px 5px black);
+}
+

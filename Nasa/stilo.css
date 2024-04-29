@@ -1,0 +1,91 @@
+
+
+
+
+html {
+    font-family: 'Grape Nuts', sans-serif;
+}
+
+
+body {
+    background-image: url("/Fotos/abs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+
+    cursor : url("/Fotos/cursor.png")
+
+    margin: 0;
+}
+
+header {
+    background: rgb(36, 36, 36);
+    height: 75px;
+}
+
+h1 {
+    text-align: center;
+    color: #79d5ff;
+    line-height: 75px;
+    margin: 0;
+}
+
+article {
+    border-radius: 10px;
+    padding: 1%;
+    margin: 1%;
+    background: rgb(62, 62, 62);
+    flex: 48%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    color: #636fb3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    color: #333;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+div {
+
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #898686;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #4865eb;
+}
