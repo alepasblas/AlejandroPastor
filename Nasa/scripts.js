@@ -1,4 +1,4 @@
-let id = 'mLRD1wNU542nhMjotdMUYZMiK9bhXs85B8IU9BuA';//Guardamos el id por si hay que cambiarlo algun dia, solo cambiarlo aqui
+let id = 'mLRD1wNU542nhMjotdMUYZMiK9bhXs85B8IU9BuA';//Guardamos el id por si hay que cambiarlo , solo cambiarlo aqui
 
 function getImagenDelDia() {
 
