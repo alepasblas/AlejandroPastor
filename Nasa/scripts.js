@@ -1,5 +1,11 @@
 let id = 'mLRD1wNU542nhMjotdMUYZMiK9bhXs85B8IU9BuA';//Guardamos el id por si hay que cambiarlo , solo cambiarlo aqui
 
+//Hacemos las constantes del valor del control deslizante y el valor deslizado para ir refrescandolas continuamente, 
+//una es el resultado que pones con el control y la otra es la que se escribe
+const controlDeslizante = document.getElementById('controlDeslizante');
+const valorDeslizado = document.getElementById('valorDeslizado');
+
+
 function getImagenDelDia() {
 
   fetch(`https://api.nasa.gov/planetary/apod?api_key=${id}`)
@@ -139,29 +145,48 @@ function obtenerImagenEpic(epic, fecha) {
 
 
 
-function imagenMarte(){
-  let sol = document.getElementById("controlDesliz").value;
-  fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${sol}}&api_key=${id}`)
+function imagenMarte() {
+  let sol = document.getElementsByName("range")[0].value;
+  fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${sol}&api_key=${id}`)
     .then(response => response.json())
     .then(data => {
-      console.log(data);
-      let imagenURL = data.photos[0].img_src;
-      console.log(imagenURL);
-      // Mostrar la imagen
-      document.getElementById("imagenMarte").innerHTML = `<img src="${imagenURL}">`;
+      if (data.photos.length > 0) {
+        let photo = data.photos[0];
+        console.log(photo.img_src);
+        document.getElementById("imagenMarte").innerHTML = `<p><img src="${photo.img_src}" alt="Foto de Marte">`;
+      } else {
+        document.getElementById("imagenMarte").innerHTML = `<p>No se encontraron fotos para el sol especificado.</p>`;
+      }
     })
     .catch(error => {
       console.error('Error:', error);
     });
-
 }
 
+//Cuando se haga click al boton enviar se llama a la funcion imagenMarte
+document.getElementById("botonEnviar").addEventListener("click", function() {
+  imagenMarte();
+});
 
 
-getImagenDelDia();//LLamamos a la funcion asi se actualiza de forma diaria
+
+// Función para ir actualizando el valor que mostramos según la posición del control deslizante
+function actualizarValor() {
+  valorDeslizado.textContent = controlDeslizante.value;
+}
+
+// Agregar un listener para el evento 'input' (cambio en tiempo real) del control deslizante
+controlDeslizante.addEventListener('input', actualizarValor);
+
+
+
+getImagenDelDia();
 getImagenTierra();
 getImagenMundoPorFecha();
 imagenMarte();
+actualizarValor();
+
+
 
 
 //Añadir bbdd en la que en cada cuenta puedas guardarte las fotos y despues exportarlas/descargarlas
