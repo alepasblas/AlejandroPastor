@@ -1,0 +1,68 @@
+body {
+    background-image: url("/Fotos/fondoMenu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 100vh;
+
+    font-family: 'Lato', sans-serif; /* Cambiar la fuente a Lato */
+    color: #fff;
+    margin: 10px;
+    padding: 5px;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 24px;
+}
+
+
+
+div {
+
+    align-items: center;
+    justify-content: space-around;
+    background-color: #464646;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image-container {
+    display: flex; 
+}
+
+.image-container a {
+    margin-right: 10px; 
+}
+
+.small-image {
+    width: 600px; 
+    height: auto; 
+}
