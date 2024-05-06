@@ -6,6 +6,8 @@ const controlDeslizante = document.getElementById('controlDeslizante');
 const valorDeslizado = document.getElementById('valorDeslizado');
 
 
+
+
 function getImagenDelDia() {
 
   fetch(`https://api.nasa.gov/planetary/apod?api_key=${id}`)
@@ -144,7 +146,6 @@ function obtenerImagenEpic(epic, fecha) {
 
 
 
-
 function imagenMarte() {
   let sol = document.getElementsByName("range")[0].value;
   fetch(`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${sol}&api_key=${id}`)
@@ -188,5 +189,6 @@ actualizarValor();
 
 
 
-
+//Login
+//Que aoarezcan las cosas poco a poco
 //Añadir bbdd en la que en cada cuenta puedas guardarte las fotos y despues exportarlas/descargarlas
