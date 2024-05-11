@@ -11,7 +11,7 @@
   
 
   // Mostramos un enlace a la página anterior y también al archivo para comprobar el resultado
-  echo "<p>Datos guardados</p>";
-  echo "<p>Haz click <a href='".$_SERVER['HTTP_REFERER']."'>aquí</a> para ir a la página anterior</p>";
-  echo "<p>Haz click <a href='mens.csv' target='_blank'>aquí</a> para ver todos los mensajes</p>";
+  echo "<p>Datos enviados</p>";
+  //echo "<p>Haz click <a href='".$_SERVER['HTTP_REFERER']."'>aquí</a> para ir a la página anterior</p>";
+  //echo "<p>Haz click <a href='mens.csv' target='_blank'>aquí</a> para ver todos los mensajes</p>";
 ?>
