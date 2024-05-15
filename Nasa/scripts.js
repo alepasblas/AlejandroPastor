@@ -65,7 +65,7 @@ function getImagenTierra() {
       console.log(data);
       document.getElementById("infoTierra").innerHTML =
 
-        `<img src="${data.url}" width="451"></img>
+        `<img src="${data.url}" width="600"></img>
         <br>
         <p>Fecha ${data.date} </p>
         <br>
