@@ -147,3 +147,11 @@ nav ul li:hover {
     bottom: 0;
     left: 0%; 
 }
+
+/*Centrar nombre*/
+#proyectos{
+    text-align: center;
+}
+#ejercicios{
+    text-align: center;
+}
