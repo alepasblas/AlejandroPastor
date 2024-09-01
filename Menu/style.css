@@ -1,5 +1,5 @@
 body {
-    background-image: url("/Fotos/fondoMenu.jpg");
+    background-image: url("../Fotos/fondoMenu.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
